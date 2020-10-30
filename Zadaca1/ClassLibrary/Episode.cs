@@ -4,31 +4,31 @@ namespace ClassLibrary
 {
     public class Episode
     {
-    
-        private  int viewerCount=0;
+
+        private int viewerCount = 0;
         private double score;
         private double scoreSum;
 
-        public Episode(int viewers,double score,double scoresum)
+        public Episode(int viewers, double score, double scoreSum)
         {
-           this.viewerCount = viewers;
-           this.score = score;
-           this.scoreSum = scoresum;
- 
+            viewerCount = viewers;
+            this.score = score;
+            this.scoreSum = scoreSum;
+
         }
 
-        public Episode() 
+        public Episode()
         {
-           this.viewerCount = 0;
-           this.score = 0;
-           this.scoreSum = 0;
+            viewerCount = 0;
+            score = 0;
+            scoreSum = 0;
         }
 
 
 
         public void AddView(double score)
         {
-         
+
             this.score = score;
             scoreSum += this.score;
 

@@ -1,15 +1,15 @@
 ﻿using System;
-using ClassLibrary; 
-
-namespace EpisodeScore
+using ClassLibrary;
+namespace Zadaca1
 {
-    class Program
-    {
+	class Program
+	{
 
-	
+		static Random generator = new Random();
+
 		static void Main(string[] args)
-        {
-		
+		{
+
 			Episode ep1, ep2;
 			ep1 = new Episode();
 			ep2 = new Episode(10, 64.39, 8.7);
@@ -29,16 +29,16 @@ namespace EpisodeScore
 			}
 
 
-			
+
 
 		}
-		
-		private static double GenerateRandomScore()
-			{
-				Random generator = new Random();
-				return generator.NextDouble() * 10;
 
-			}
+		private static double GenerateRandomScore()
+		{
+			
+			return generator.NextDouble() * 10;
+
+		}
 
 
 	}

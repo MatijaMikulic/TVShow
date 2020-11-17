@@ -16,6 +16,9 @@ namespace ClassLibrary
             EpisodeDuration = episodeDuration;
             EpisodeName = episodeName;
         }
-       
+        public override string ToString()
+        {
+            return $"{EpisodeNumber},{EpisodeDuration},{EpisodeName}";
+        }
     }
 }

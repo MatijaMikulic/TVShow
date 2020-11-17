@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ClassLibrary
 {
-    public  class TvUtilities
+    public static class TvUtilities
     {
         public static double GenerateRandomScore(Random generator)
         {

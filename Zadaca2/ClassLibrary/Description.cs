@@ -8,7 +8,7 @@ namespace ClassLibrary
     {
         public int EpisodeNumber { get; private set; }
         public string EpisodeName { get; private set; }
-        public TimeSpan EpisodeDuration { get; set; }
+        public TimeSpan EpisodeDuration { get; private set; }
 
         public Description(int episodeNumber,TimeSpan episodeDuration,string episodeName)
         {
